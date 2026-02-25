@@ -14,7 +14,8 @@
 /coverage
 
 # next.js
-/.history
+/.next/
+/.history/
 /out/
 
 # production
