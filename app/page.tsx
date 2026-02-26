@@ -75,47 +75,55 @@ const PROJECTS = [
   },
 ];
 
+
 const EXPERIENCE = [
   {
-    role: "Senior Software Engineer",
-    co: "TechCorp Inc.",
-    period: "Jan 2022 — Present",
-    loc: "San Francisco",
-    desc: "Leading a team of six engineers on a distributed data platform serving 50M+ users. Cut infrastructure costs by 35% and pushed uptime to 99.98%. Also introduced proper PR reviews — still the most controversial decision I've made there.",
-    tags: ["React", "Node.js", "AWS", "Kafka"],
+    role: "Software Developer",
+    co: "AliteProjects",
+    period: "Dec 2024 — Present",
+    loc: "Vadodara, Gujarat, India",
+    desc: "Working on scalable web applications across Shopify Plus and React.js ecosystems. Involved in full-cycle development including custom theme development, API integrations, performance optimization, and frontend architecture enhancements.",
+    tags: ["React.js", "Shopify Plus", "JavaScript", "API Integration"],
   },
   {
-    role: "Full Stack Developer",
-    co: "Nexus Labs",
-    period: "Mar 2020 — Dec 2021",
-    loc: "Remote",
-    desc: "Shipped four SaaS products from zero to revenue. Owned the frontend architecture, touched the backend constantly, and once restored a deleted staging database in twelve minutes — a personal record.",
-    tags: ["Vue.js", "Python", "PostgreSQL", "Docker"],
+    role: "Software Developer",
+    co: "The Commerce Team Global",
+    period: "May 2024 — Dec 2024",
+    loc: "Vadodara, Gujarat, India (On-site)",
+    desc: "Developed and maintained Shopify Plus and React-based solutions for international clients. Worked on troubleshooting complex production issues, optimizing storefront performance, and implementing custom e-commerce features.",
+    tags: ["React.js", "Shopify Plus", "Troubleshooting", "Performance Optimization"],
   },
   {
-    role: "Junior Developer",
-    co: "Pixel Studio",
-    period: "Jun 2018 — Feb 2020",
-    loc: "Austin, TX",
-    desc: "Built responsive apps for 20+ clients. Learned that 'make it pop' means something different to every single client, and that IE11 support is genuinely not worth the psychological damage.",
-    tags: ["JavaScript", "React", "CSS", "PHP"],
+    role: "Associate Software Developer",
+    co: "The Commerce Team Global",
+    period: "Jan 2023 — May 2024",
+    loc: "Vadodara, Gujarat, India",
+    desc: "Built and customized Shopify stores with Liquid, JavaScript, and modern frontend practices. Contributed to theme development, third-party app integrations, and client-specific feature implementations.",
+    tags: ["Shopify", "Liquid", "JavaScript", "Theme Development"],
   },
 ];
 
 const EDUCATION = [
   {
-    deg: "B.S. Computer Science",
-    school: "UC Berkeley",
-    period: "2014 – 2018",
-    note: "Magna Cum Laude · GPA 3.8 · Thesis on adaptive load balancing in microservice architectures.",
-    courses: ["Distributed Systems", "Algorithms", "OS Design", "HCI"],
+    deg: "B.E (Computer Science)",
+    school: "ITM Universe, Vadodara, Gujarat",
+    period: "June 2018 — May 2022",
+    note: "CGPA: 8.91",
+    courses: [],
   },
   {
-    deg: "AWS Solutions Architect",
-    school: "Amazon Web Services",
-    period: "2021",
-    note: "Professional Certification · Top 5th percentile globally. Three weeks of practice exams — not recommended for mental health.",
-    courses: ["EC2 / S3 / RDS", "Lambda", "CloudFormation", "VPC"],
+    deg: "12th Grade",
+    school: "Saint Basil School, Vadodara, Gujarat",
+    period: "April 2017 — June 2018",
+    note: "B1 Grade",
+    courses: [],
+  },
+  {
+    deg: "10th Grade",
+    school: "Saint Basil School, Vadodara, Gujarat",
+    period: "May 2016 — May 2017",
+    note: "A1 Grade",
+    courses: [],
   },
 ];
 
@@ -536,7 +544,7 @@ export default function Portfolio() {
 
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   const copyEmail = () => {
-    navigator.clipboard.writeText("alex@carter.dev");
+    navigator.clipboard.writeText("bijinraju1999@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2200);
   };
@@ -830,6 +838,7 @@ export default function Portfolio() {
                 }}>
                   I build things for the web — fast, deliberate, and built to last.{" "}
                   {years}+ years of turning complex problems into clean solutions.
+                  Open to React-based roles and aspiring to take on more backend responsibilities to grow as a full-stack developer.
                 </p>
                 <p style={{
                   fontFamily: "'JetBrains Mono', monospace",
@@ -951,7 +960,7 @@ export default function Portfolio() {
             <SectionLabel n="03 //" title="Experience" />
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               {EXPERIENCE.map((e, i) => (
-                <Reveal key={e.co} delay={i * 0.1} from="left">
+                <Reveal key={`${e.co}-${i}`} delay={i * 0.1} from="left">
                   <div className="exp-card">
                     <div className="exp-header" onClick={() => setOpenExp(openExp === i ? -1 : i)}>
                       <div>
@@ -1010,7 +1019,7 @@ export default function Portfolio() {
             <SectionLabel n="04 //" title="Education" />
             <div className="edu-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.2rem" }}>
               {EDUCATION.map((e, i) => (
-                <Reveal key={e.school} delay={i * 0.12}>
+                <Reveal key={`${e.school}-${i}`} delay={i * 0.12}>
                   <div className="edu-card">
                     <div style={{ height: "2px", background: `linear-gradient(90deg, ${C.blueDeep}, ${C.blue})`, borderRadius: 2, marginBottom: "1.6rem", opacity: 0.6 }} />
                     <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem", color: C.textDim, letterSpacing: "0.08em", display: "block", marginBottom: "0.6rem" }}>{e.period}</span>
@@ -1038,12 +1047,12 @@ export default function Portfolio() {
               {/* LEFT */}
               <Reveal from="left">
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem", color: C.textMid, lineHeight: 1.85, marginBottom: "2.5rem" }}>
-                  Open to full-time roles and thoughtfully scoped freelance. I reply fast — unless deep in a debugging session, in which case I{"'"}ll surface eventually.
+                  Open to full-time roles . I reply fast — unless deep in a debugging session, in which case I{"'"}ll surface eventually.
                 </p>
                 <div style={{ marginBottom: "2.5rem" }}>
                   {[
-                    { k: "Email", v: "alex@carter.dev", col: C.blue },
-                    { k: "Location", v: "San Francisco, CA", col: C.textMid },
+                    { k: "Email", v: "bijinraju1999@gmail.com", col: C.blue },
+                    { k: "Location", v: "Vadodara, India", col: C.textMid },
                     { k: "Status", v: "Open · replies within 24h", col: "#3fb950" },
                   ].map(item => (
                     <div key={item.k} style={{ display: "flex", gap: "1.5rem", alignItems: "center", padding: "0.9rem 0", borderBottom: `1px solid ${C.border}` }}>
@@ -1094,7 +1103,7 @@ export default function Portfolio() {
       <footer style={{ borderTop: `1px solid ${C.border}`, padding: "2rem 2.5rem", position: "relative", zIndex: 1 }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
           <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 900, fontSize: "1.1rem", color: C.text, letterSpacing: "-0.03em" }}>
-            AC<span style={{ color: C.blue }}>.dev</span>
+            BR<span style={{ color: C.blue }}>.dev</span>
           </span>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", color: C.textDim }}>
             {"// "}built with caffeine & occasional frustration · © {new Date().getFullYear()}
