@@ -124,8 +124,8 @@ const NAV = ["About", "Skills", "Projects", "Experience", "Education", "Contact"
 /* ════════════════════════════════════════════════
    HOOKS
 ════════════════════════════════════════════════ */
-function useInView(threshold = 0.1): [React.RefObject<HTMLDivElement>, boolean] {
-  const ref = useRef<HTMLDivElement>(null);
+function useInView(threshold = 0.1): [React.RefObject<HTMLDivElement | null>, boolean] {
+  const ref = useRef<HTMLDivElement | null>(null);
   const [v, setV] = useState(false);
   useEffect(() => {
     const o = new IntersectionObserver(
@@ -724,7 +724,7 @@ export default function Portfolio() {
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 2.5rem", width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* logo */}
           <div onClick={() => go("About")} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: "0.4rem" }}>
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 900, fontSize: "1.4rem", color: C.text, letterSpacing: "-0.04em" }}>AC</span>
+            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 900, fontSize: "1.4rem", color: C.text, letterSpacing: "-0.04em" }}>BR</span>
             <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", color: C.blue, opacity: 0.6 }}>.dev</span>
           </div>
           {/* links */}
