@@ -840,7 +840,7 @@ export default function Portfolio() {
                   transition: "opacity 0.7s ease 0.44s",
                   fontStyle: "italic",
                 }}>
-                  Don't mind the URL — not rich enough to afford a custom domain yet.
+                  Don{"'"}t mind the URL — not rich enough to afford a custom domain yet.
                 </p>
 
                 {/* buttons */}
@@ -913,7 +913,7 @@ export default function Portfolio() {
                 marginTop: "2.5rem",
                 fontStyle: "italic",
               }}>
-                // Also fluent in: git blame, rubber duck debugging, and convincing clients that CSS is genuinely hard.
+                {"// "} Also fluent in: git blame, rubber duck debugging, and convincing clients that CSS is genuinely hard.
               </p>
             </Reveal>
           </div>
@@ -937,7 +937,7 @@ export default function Portfolio() {
                 textAlign: "right",
                 fontStyle: "italic",
               }}>
-                // +3 more on GitHub — some brilliant, some humbling, all educational.
+                {"// "} +3 more on GitHub — some brilliant, some humbling, all educational.
               </p>
             </Reveal>
           </div>
@@ -966,7 +966,7 @@ export default function Portfolio() {
                       </div>
                       <span style={{
                         fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: "1rem", color: C.textDim,
+                        fontSize: "1rem",
                         transition: "transform 0.3s, color 0.2s",
                         transform: openExp === i ? "rotate(90deg)" : "none",
                         color: openExp === i ? C.blue : C.textDim,
@@ -1038,7 +1038,7 @@ export default function Portfolio() {
               {/* LEFT */}
               <Reveal from="left">
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem", color: C.textMid, lineHeight: 1.85, marginBottom: "2.5rem" }}>
-                  Open to full-time roles and thoughtfully scoped freelance. I reply fast — unless deep in a debugging session, in which case I'll surface eventually.
+                  Open to full-time roles and thoughtfully scoped freelance. I reply fast — unless deep in a debugging session, in which case I{"'"}ll surface eventually.
                 </p>
                 <div style={{ marginBottom: "2.5rem" }}>
                   {[
@@ -1097,7 +1097,7 @@ export default function Portfolio() {
             AC<span style={{ color: C.blue }}>.dev</span>
           </span>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", color: C.textDim }}>
-            // built with caffeine & occasional frustration · © {new Date().getFullYear()}
+            {"// "}built with caffeine & occasional frustration · © {new Date().getFullYear()}
           </span>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             {["GitHub", "LinkedIn", "Twitter"].map(s => (
