@@ -903,8 +903,7 @@ export default function Portfolio() {
                   >
                     {copied ? "✓ Copied!" : "Copy Email"}
                   </button>
-                  <button className="cta-ghost">GitHub ↗</button>
-                  <button className="cta-ghost">LinkedIn ↗</button>
+                  <a href={'https://www.linkedin.com/in/bijin-raju-5b6a15210/'} className="cta-ghost">LinkedIn ↗</a>
                 </div>
               </Reveal>
 

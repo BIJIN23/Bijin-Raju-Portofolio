@@ -13,9 +13,6 @@ export const SKILLS = [
   { name: "Javascript", pct: 75, cat: "Backend" },
   { name: "React / Next.js", pct: 60, cat: "Frontend" },
   { name: "TypeScript", pct: 60, cat: "Frontend" },
-  { name: "Node.js", pct: 60, cat: "Backend" },
-  { name: "Prisma", pct: 50, cat: "Database" },
-  { name: "MongoDB", pct: 50, cat: "Database" },
 ];
 
 export const PROJECTS = [
