@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import {EDUCATION, EXPERIENCE, PROJECTS, SKILLS,ROLES, NAV} from './constant';
+import { EDUCATION, EXPERIENCE, PROJECTS, SKILLS, ROLES, NAV } from './constant';
 import useInView from '../hooks/useInView';
 import useTypewriter from "@/hooks/useTypewriter";
 import C from '@/styles/theme'
@@ -912,7 +912,7 @@ export default function Portfolio() {
                 <div style={{ background: C.bgCard, border: `1px solid ${C.border}`, borderRadius: "14px", overflow: "hidden" }}>
                   <div style={{ background: "rgba(88,166,255,0.06)", borderBottom: `1px solid ${C.border}`, padding: "1rem 1.5rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
                     {["#ff5f57", "#ffbd2e", "#28c840"].map((c, i) => <div key={i} style={{ width: 11, height: 11, borderRadius: "50%", background: c, opacity: 0.8 }} />)}
-                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", color: C.textDim, marginLeft: "0.5rem" }}>new message.tsx</span>
+                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", color: C.textDim, marginLeft: "0.5rem" }}>new message.tsx (Form is under development)</span>
                   </div>
                   <div style={{ padding: "1.8rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
                     <input className="form-input" placeholder="Your name" />
