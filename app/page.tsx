@@ -4,6 +4,7 @@ import { EDUCATION, EXPERIENCE, PROJECTS, SKILLS, ROLES, NAV } from './constant'
 import useInView from '../hooks/useInView';
 import useTypewriter from "@/hooks/useTypewriter";
 import C from '@/styles/theme'
+import ContactForm from "@/components/ContactForm";
 
 
 function Particles() {
@@ -909,23 +910,7 @@ export default function Portfolio() {
 
               {/* RIGHT — form */}
               <Reveal delay={0.15} from="right">
-                <div style={{ background: C.bgCard, border: `1px solid ${C.border}`, borderRadius: "14px", overflow: "hidden" }}>
-                  <div style={{ background: "rgba(88,166,255,0.06)", borderBottom: `1px solid ${C.border}`, padding: "1rem 1.5rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                    {["#ff5f57", "#ffbd2e", "#28c840"].map((c, i) => <div key={i} style={{ width: 11, height: 11, borderRadius: "50%", background: c, opacity: 0.8 }} />)}
-                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", color: C.textDim, marginLeft: "0.5rem" }}>new message.tsx (Form is under development)</span>
-                  </div>
-                  <div style={{ padding: "1.8rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
-                    <input className="form-input" placeholder="Your name" />
-                    <input className="form-input" placeholder="your@email.com" />
-                    <textarea className="form-input" rows={4} placeholder="Tell me what you're building..." style={{ resize: "vertical" }} />
-                    <button
-                      className="cta-primary"
-                      style={{ width: "100%", padding: "1rem", fontSize: "1rem", justifyContent: "center" }}
-                    >
-                      Send Message →
-                    </button>
-                  </div>
-                </div>
+                <ContactForm />
               </Reveal>
             </div>
           </div>
