@@ -23,6 +23,7 @@ export const PROJECTS = [
     desc: "Enterprise Shopify store built for Unilever Professional India with a custom pincode-based delivery validation system to control product availability and logistics at checkout.",
     stack: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
     stat: "Custom Pincode Delivery System",
+    year: "'23",
   },
   {
     no: "02",
@@ -31,6 +32,7 @@ export const PROJECTS = [
     desc: "Shopify store built completely from scratch using Liquid templating along with HTML, CSS, and JavaScript. Fully custom theme development with tailored UI and performance optimization.",
     stack: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
     stat: "Custom Theme from Scratch",
+    year: "'24",
   },
   {
     no: "03",
@@ -39,6 +41,7 @@ export const PROJECTS = [
     desc: "US-based electronics e-commerce store developed from scratch on Shopify. Implemented Checkout UI Extensions to enhance user experience and optimize the checkout flow.",
     stack: ["Shopify", "Liquid", "JavaScript", "Checkout UI Extensions"],
     stat: "Enhanced Checkout Experience",
+    year: "'25",
   },
   {
     no: "04",
@@ -47,9 +50,9 @@ export const PROJECTS = [
     desc: "AI-powered insurance comparison platform built from scratch using React and MUI. Implemented dynamic forms, Redux state management, and intelligent recommendation logic based on user data captured via AI-driven chat interactions.",
     stack: ["React", "MUI", "Redux", "JavaScript"],
     stat: "AI-based Insurance Recommendation",
+    year: "'26",
   },
 ];
-
 
 export const EXPERIENCE = [
   {
@@ -66,7 +69,12 @@ export const EXPERIENCE = [
     period: "May 2024 — Dec 2024",
     loc: "Vadodara, Gujarat, India (On-site)",
     desc: "Developed and maintained Shopify Plus and React-based solutions for international clients. Worked on troubleshooting complex production issues, optimizing storefront performance, and implementing custom e-commerce features.",
-    tags: ["React.js", "Shopify Plus", "Troubleshooting", "Performance Optimization"],
+    tags: [
+      "React.js",
+      "Shopify Plus",
+      "Troubleshooting",
+      "Performance Optimization",
+    ],
   },
   {
     role: "Associate Software Developer",
@@ -102,4 +110,11 @@ export const EDUCATION = [
   },
 ];
 
-export const NAV = ["About", "Skills", "Projects", "Experience", "Education", "Contact"];
+export const NAV = [
+  "About",
+  "Skills",
+  "Projects",
+  "Experience",
+  "Education",
+  "Contact",
+];

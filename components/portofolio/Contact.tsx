@@ -1,8 +1,9 @@
 import C from "@/styles/theme";
 import { useState } from "react";
 import ContactForm from "@/components/portofolio/ContactForm";
+import { SectionProps } from "@/types/portfolio";
 
-const Contact = ({ SectionLabel, Reveal }) => {
+const Contact = ({ SectionLabel, Reveal }: SectionProps) => {
   const copyEmail = () => {
     navigator.clipboard.writeText("bijinraju1999@gmail.com");
     setCopied(true);

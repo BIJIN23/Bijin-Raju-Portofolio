@@ -1,8 +1,9 @@
 import { EXPERIENCE } from "@/app/constants/portffolio";
 import C from "@/styles/theme";
 import { useState } from "react";
+import { SectionProps } from "@/types/portfolio";
 
-const Experience = ({ SectionLabel, Reveal }) => {
+const Experience = ({ SectionLabel, Reveal }: SectionProps) => {
   const [openExp, setOpenExp] = useState<number>(0);
   return (
     <section

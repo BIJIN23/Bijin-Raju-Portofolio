@@ -2,6 +2,7 @@ import { useState } from "react";
 import C from "@/styles/theme";
 import { PROJECTS } from "@/app/constants/portffolio";
 import useInView from "@/hooks/useInView";
+import { SectionProps } from "@/types/portfolio";
 
 function TimelineItem({
   p,
@@ -202,7 +203,7 @@ function TimelineItem({
     </div>
   );
 }
-const Projects = ({ SectionLabel, Reveal }) => {
+const Projects = ({ SectionLabel, Reveal }: SectionProps) => {
   return (
     <section
       id="Projects"

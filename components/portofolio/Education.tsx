@@ -1,7 +1,7 @@
 import { EDUCATION } from "@/app/constants/portffolio";
 import C from "@/styles/theme";
-
-const Education = ({ SectionLabel, Reveal }) => {
+import { SectionProps } from "@/types/portfolio";
+const Education = ({ SectionLabel, Reveal }: SectionProps) => {
   return (
     <section
       id="Education"

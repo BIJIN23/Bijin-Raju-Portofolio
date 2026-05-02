@@ -2,6 +2,7 @@ import { SKILLS } from "@/app/constants/portffolio";
 import useInView from "@/hooks/useInView";
 import C from "@/styles/theme";
 import { useState } from "react";
+import { SectionProps } from "@/types/portfolio";
 function SkillBar({
   name,
   pct,
@@ -98,7 +99,7 @@ function SkillBar({
   );
 }
 
-const Skills = ({ SectionLabel, Reveal }) => {
+const Skills = ({ SectionLabel, Reveal }: SectionProps) => {
   return (
     <section
       id="Skills"
