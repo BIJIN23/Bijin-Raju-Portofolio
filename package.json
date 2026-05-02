@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.8",
     "@mui/styled-engine-sc": "^7.3.8",
+    "@vercel/analytics": "^2.0.1",
     "next": "16.1.6",
     "nodemailer": "^8.0.5",
     "react": "19.2.3",

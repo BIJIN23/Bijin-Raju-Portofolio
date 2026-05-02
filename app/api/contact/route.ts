@@ -8,7 +8,8 @@ const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_APP_PASSWORD,
   },
 });
-
+console.log("USER:", process.env.GMAIL_USER);
+console.log("PASS:", process.env.GMAIL_APP_PASSWORD);
 export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();
