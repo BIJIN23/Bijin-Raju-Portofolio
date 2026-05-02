@@ -1,8 +1,9 @@
 import React from "react";
 import C from "@/styles/theme";
 import { NAV } from "../../app/constants/portffolio";
+import { NavBarProps } from "@/types/portfolio";
 
-const NavBar = ({ scrolled, go, activeNav }) => {
+const NavBar = ({ scrolled, go, activeNav }: NavBarProps) => {
   return (
     <nav
       style={{

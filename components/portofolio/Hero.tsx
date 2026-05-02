@@ -1,6 +1,7 @@
 import C from "@/styles/theme";
+import { HeroProps } from "@/types/portfolio";
 
-const Hero = ({ Particles, heroIn, typed, years, go }) => {
+const Hero = ({ Particles, heroIn, typed, years, go }: HeroProps) => {
   return (
     <section
       id="About"
